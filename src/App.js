@@ -32,7 +32,11 @@ function App() {
         <div className="top">
           <div className="location">
             <p>
-              {data.name}, {data.sys.country}
+              {data.name ? (
+                <p>
+                  {data.name}, {data.sys.country}
+                </p>
+              ) : null}
             </p>
           </div>
           <div className="temp">

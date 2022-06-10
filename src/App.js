@@ -46,7 +46,7 @@ function App() {
             {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
-
+{data.name ? (
         <div className="bottom" style={{ color: "black" }}>
           <div className="feels">
             {data.main ? (
@@ -65,6 +65,7 @@ function App() {
             <p>Wind Speed</p>
           </div>
         </div>
+ ) : null}
       </div>
     </div>
   );

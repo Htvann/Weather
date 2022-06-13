@@ -47,7 +47,7 @@ function App() {
           </div>
         </div>
 {data.name ? (
-        <div className="bottom" style={{ color: "black" }}>
+        <div className="bottom">
           <div className="feels">
             {data.main ? (
               <p className="bold">{data.main.feels_like.toFixed()}°F</p>
